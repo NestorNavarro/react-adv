@@ -12,7 +12,8 @@ export interface Product {
 export interface ProductCardContext {
     count : number;
     product : Product;
-    increaseByOne : (val : number) => () => void;
+    maxCount ?: number;
+    increaseBy : (val : number) => () => void;
 }
 
 export interface onChangeArgs {
@@ -27,4 +28,19 @@ export interface ProductCardHOCProps {
     Title: (Props : ProductTitleProps ) => JSX.Element;
     Image: ({ img, title }: ProductImageProps ) => JSX.Element;
     Buttons: ({ className } : ProductsButtonsProps) => JSX.Element;
+}
+
+export interface InitialValues {
+    count ?: number;
+    maxCount ?: number; 
+}
+
+export interface ProductCardHandlers {
+    count : number;
+    isMaxCountReached : boolean;
+    maxCount ?: number;
+    product : Product;
+
+    increaseBy : (value : number) => () => void;
+    reset : () => void; 
 }

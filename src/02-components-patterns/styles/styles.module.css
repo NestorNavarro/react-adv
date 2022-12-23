@@ -60,3 +60,14 @@
 .buttonAdd:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
+
+.disabled {
+    border-color:  gray !important;
+    border-left:1px solid white !important;
+    color: gray !important;
+}
+
+.disabled:hover {
+    background-color: transparent !important;
+    cursor: default;
+}
