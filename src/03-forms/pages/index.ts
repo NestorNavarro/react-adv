@@ -1,5 +1,7 @@
+export { default as  DynamicForm } from "./DynamicForm"
 export { default as  RegisterPage } from "./RegisterPage"
 export { default as  FormikYupPage } from "./FormikYupPage"
 export { default as FormikBasicPage } from "./FormikBasicPage"
-export { default as  FormikYupComponents } from "./FormikYupComponents"
+export { default as RegisterFormikPage } from "./RegisterFormikPage"
+export { default as FormikYupComponents } from "./FormikYupComponents"
 export { default as FormikYupAbstractation } from "./FormikYupAbstractation"
