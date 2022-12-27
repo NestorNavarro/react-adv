@@ -1,16 +1,70 @@
 [
     {
-        "type" : "input",
+        "type" : "text",
         "name" : "firstName",
         "placeholder" : "Fernnando",
-        "lable" : "First Name",
-        "value" : "xcxc"
+        "label" : "First Name",
+        "value" : "",
+        "validation" : [
+            {
+                "type" : "required"
+            },
+            {
+                "type" : "minLength",
+                "value" : 5
+            }
+        ]
     },
     {
-        "type" : "input",
+        "type" : "text",
         "name" : "lastName",
         "placeholder" : "Fernnando",
-        "lable" : "Last Name",
-        "value" : ""
+        "label" : "Last Name",
+        "value" : "",
+        "validation" : [
+            {
+                "type" : "required"
+            }
+        ]
+    },
+    {
+        "type" : "email",
+        "name" : "email",
+        "placeholder" : "example@something.com",
+        "label" : "Email",
+        "value" : "",
+        "validation" : [
+            {
+                "type" : "required"
+            },
+            {
+                "type" : "email"
+            }
+        ]
+    },
+    {
+        "type" : "select",
+        "name" : "favoriteGame",
+        "label" : "Favorite game",
+        "value" : "",
+        "options" : [
+            {
+               "label" : "super smash",
+               "value" : "0"
+            },
+            {
+               "label" : "lol",
+               "value" : "1"
+            },
+            {
+               "label" : "valo",
+               "value" : "2"
+            }
+        ],
+        "validation" : [
+            {
+                "type" : "required"
+            }
+        ]
     }
 ]
